@@ -23,3 +23,5 @@
  * must not linger as orphan keys in forked locales.
  */
 
+export const landingLinkEnabled = true;
+
