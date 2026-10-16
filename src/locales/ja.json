@@ -1,18 +1,20 @@
 {
   "$schema": "../../docs/home.schema.json",
   "site": {
-    "name": "Anvil Quest Wiki",
-    "shortName": "AQ Wiki",
-    "description": "Anvil Questの完全攻略Wiki。ボス攻略、tier list、コード、アイテムの場所、初心者向けのヒントを掲載。全ガイドに最終検証日付き。",
-    "tagline": "Anvil Questのすべてを鍛え上げる場所",
-    "legalNotice": "Anvil Quest Wikiはファン制作のコミュニティサイトです。ゲーム開発者とは一切関係ありません。"
+    "name": "Deskrawl Wiki & Guide",
+    "shortName": "Deskrawl Guide",
+    "description": "Steam版Deskrawlの攻略Wiki。20体のボス、クラスビルド、ミニオンと手綱、レジェンダリー装備、Steamマーケット、ライフスキルを掲載。",
+    "tagline": "Deskrawlの進行に役立つ実用データベース",
+    "legalNotice": "Deskrawl GuideはFirst Day Gamesとは無関係のファンサイトです。"
   },
   "nav": {
     "home": "ホーム",
     "bosses": "ボス",
     "guides": "ガイド",
+    "builds": "ビルド",
+    "minions": "ミニオン",
     "items": "アイテム",
-    "codes": "コード",
+    "market": "マーケット",
     "toggleTheme": "テーマ切替",
     "menu": "メニュー",
     "close": "閉じる",
@@ -130,7 +132,7 @@
   "overview": {
     "bosses": {
       "overviewTitle": "全ボス一覧",
-      "overviewDescription": "Anvil Questの全ボス攻略ガイド。攻撃パターン、弱点、推奨装備を完全網羅。"
+      "overviewDescription": "Deskrawlの全ボス攻略ガイド。20体のボス、解放条件、地域、実績をわかりやすく整理。"
     },
     "guides": {
       "overviewTitle": "全ガイド一覧",
@@ -142,19 +144,19 @@
     },
     "codes": {
       "overviewTitle": "全コード一覧",
-      "overviewDescription": "Anvil Questの有効なコード一覧。コイン、ジェム、限定アイテムが入手可能。毎日検証済み。"
+      "overviewDescription": "Deskrawlの攻略情報を最新状態で整理。ボス、ビルド、ミニオン、装備、Steamマーケットを掲載。"
     }
   },
   "home": {
     "meta": {
-      "title": "Anvil Quest Wiki - ボス攻略・コード・tier list",
-      "description": "Anvil Questの最も完全なWiki。ボス攻略、有効なコード、アイテムの場所、tier list、初心者ガイドを掲載。全ページに最終検証日を表示。"
+      "title": "Deskrawl Wiki - ボス攻略・ビルド・ミニオン・マーケット",
+      "description": "Deskrawlの攻略Wiki。20体のボス、4クラスのビルド、ミニオンと手綱、レジェンダリー装備、Steamマーケット、初心者ガイドを掲載。"
     },
     "hero": {
       "badge": "ファン制作コミュニティWiki",
-      "title": "Anvil Quest Wiki",
-      "description": "Anvil Questの完全攻略サイト。ボス攻略、有効なコード、アイテムの場所、tier list、鍛冶を極めるために必要なすべてが揃っています。",
-      "ctaPrimary": "Anvil Questをプレイ",
+      "title": "Deskrawl Wiki & Guide",
+      "description": "Deskrawlのボス解放条件、クラスビルド、ミニオン、手綱、レジェンダリー装備、Steamマーケットをまとめた独立攻略サイト。",
+      "ctaPrimary": "DeskrawlをSteamでプレイ",
       "ctaSecondary": "ガイドを見る",
       "videoId": ""
     },
@@ -163,21 +165,21 @@
     },
     "start": {
       "badge": "ここから始める",
-      "title": "Anvil Questの旅",
+      "title": "Deskrawlを始める",
       "cards": [
         {
           "number": "1",
           "title": "初心者ガイド",
-          "description": "Anvil Quest初めての方はここから。基本操作、メカニクス、最初の1時間の進め方を解説。",
+          "description": "Deskrawl初心者向け。序盤の進め方、オフラインキャラクター、最初に強化すべき装備を解説。",
           "icon": "lucide:book-open",
           "href": "/guides/beginner-guide"
         },
         {
           "number": "2",
-          "title": "有効なコード",
-          "description": "最新のコードを入力して、無料コイン、ジェム、限定アイテムを入手。",
-          "icon": "lucide:gift",
-          "href": "/codes"
+          "title": "クラスビルド",
+          "description": "Hunter、Monk、Sorcerer、Warriorのビルドを比較して、自分のプレイスタイルに合う構成を選べます。",
+          "icon": "lucide:shield",
+          "href": "/builds"
         },
         {
           "number": "3",
@@ -223,9 +225,9 @@
       "modules": [
         {
           "order": 1,
-          "name": "Anvil Questコード",
-          "description": "有効なコードで無料コイン、ジェム、限定アイテムを入手。毎日更新。",
-          "href": "/codes",
+          "name": "Deskrawlマーケット",
+          "description": "ミニオン、手綱、レジェンダリー装備のSteamマーケット情報を確認。",
+          "href": "/market",
           "displayType": "badge-list",
           "highlights": [
             {
@@ -345,29 +347,25 @@
         {
           "order": 6,
           "name": "動画ガイド",
-          "description": "Anvil Quest の厳選プレイ動画とボス戦を視聴。",
+          "description": "Deskrawlのゲームプレイ、クラスビルド、ボス戦、進行ガイドをチェック。",
           "href": "/guides",
           "displayType": "video-grid",
           "highlights": [
             {
               "title": "初心者向けプレイガイド",
-              "youtubeId": "dQw4w9WgXcQ",
-              "duration": "12:34"
+              "youtubeId": "e7evrcbo0D8"
             },
             {
               "title": "全ボス威力ランキング",
-              "youtubeId": "aaaaaaaaaaa",
-              "duration": "18:42"
+              "youtubeId": "7-8c7oZP6xk"
             },
             {
               "title": "スピードラン解説",
-              "youtubeId": "bbbbbbbbbbb",
-              "duration": "25:10"
+              "youtubeId": "PBMfL5nHkgE"
             },
             {
               "title": "隠し要素まとめ",
-              "youtubeId": "ccccccccccc",
-              "duration": "9:15"
+              "youtubeId": "Atzcc0JS1Jc"
             }
           ]
         }
@@ -375,39 +373,39 @@
     },
     "faq": {
       "title": "よくある質問",
-      "description": "Anvil Questに関するよくある質問への回答です。",
+      "description": "Deskrawlに関するよくある質問への回答です。",
       "items": [
         {
-          "question": "Anvil Questとは何ですか？",
-          "answer": "Anvil QuestはRobloxで遊べるファンタジーRPGです。鍛冶屋の見習いとして武器を鍛え、Shattered Islesのボスと戦います。2026年1月にリリースされ、1200万回以上のアクセスを記録しています。"
+          "question": "Deskrawlとはどんなゲームですか？",
+          "answer": "DeskrawlはSteamで遊べるデスクトップ型のアイドルARPGです。クラスを育て、ボスを解放し、ミニオンや装備を集めながら進行します。"
         },
         {
           "question": "初心者はどのクラスを選ぶべきですか？",
           "answer": "ウォリアーが最も初心者向けです。HPが高く、シンプルなメカニクスで扱いやすいです。ゲームに慣れたら、ローグは上級者向けの最高火力クラスです。"
         },
         {
-          "question": "Anvil Questでコードを入力するには？",
-          "answer": "ゲームを開き、右上の歯車アイコンをクリック、「コード入力」欄にコードを貼り付けて確認を押します。コードは大文字小文字を区別します。"
+          "question": "Deskrawlの初心者は何から始めるべきですか？",
+          "answer": "まず1つのクラスに絞り、序盤のボス解放と武器強化を進めましょう。レア素材やマーケット購入は、次のボスに必要な装備がわかってから使うのがおすすめです。"
         },
         {
-          "question": "Anvil Questは無料ですか？",
-          "answer": "はい、Anvil QuestはRobloxで完全無料で遊べます。オプションのコスメ課金はありますが、ゲームバランスには影響しません。"
+          "question": "Deskrawlはどのプラットフォームで遊べますか？",
+          "answer": "DeskrawlはPC向けにSteamで配信されています。"
         },
         {
-          "question": "Anvil Questはどのくらいの頻度で更新されますか？",
-          "answer": "Forge Studiosは約2週間に1回の大型アップデートを配信し、間に小規模な修正パッチを挟みます。新しいボスとコードは通常、大型アップデートごとに追加されます。"
+          "question": "Deskrawlの攻略情報はどのくらい更新されますか？",
+          "answer": "大型パッチや新しいボス、ビルド環境の変化に合わせて、攻略記事とマーケット情報を更新します。"
         }
       ]
     },
     "closingCta": {
       "title": "鍛冶を極める準備はできましたか？",
-      "description": "このWikiをブックマークして、新しいコード、ボス攻略、tier listの更新を毎日チェックしましょう。",
-      "primary": "Anvil Questをプレイ",
+      "description": "このWikiをブックマークして、ボス解放、ビルド、ミニオン、マーケット情報の更新をチェックしましょう。",
+      "primary": "DeskrawlをSteamでプレイ",
       "secondary": "Discordに参加"
     }
   },
   "footer": {
-    "playGame": "Anvil Questをプレイ",
+    "playGame": "DeskrawlをSteamでプレイ",
     "officialDiscord": "公式Discord",
     "officialYoutube": "公式YouTube",
     "officialTwitter": "公式Twitter",
@@ -418,7 +416,7 @@
     "termsOfService": "利用規約",
     "copyright": "著作権",
     "contact": "お問い合わせ",
-    "copyrightText": "© 2026 Anvil Quest Wiki. ファン制作、Forge Studiosとは関係ありません。",
+    "copyrightText": "© 2026 Deskrawl Guide. ファン制作、First Day Gamesとは関係ありません。",
     "community": "コミュニティ",
     "legal": "法的情報"
   }

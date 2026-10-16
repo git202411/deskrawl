@@ -4,8 +4,7 @@
  * Renders the current locale and links to the same page in other locales.
  */
 import { Icon } from 'astro-icon/components';
-import { locales, LOCALE_LABELS, type Locale } from '~/i18n/routing';
-import { landingLinkEnabled, zhLandingLink } from '~/config/project';
+import { defaultLocale, LOCALE_LABELS, type Locale } from '~/i18n/routing';
 
 interface Props {
   locale: Locale;
@@ -19,7 +18,9 @@ interface Props {
   availableLocales?: readonly Locale[];
 }
 const { locale, pathFor, availableLocales } = Astro.props;
-const switchLocales = availableLocales ?? locales;
+// Deskrawl currently publishes the English UI only. Keep the switcher ready
+// for future locale expansion, but do not advertise the retired Japanese UI.
+const switchLocales = availableLocales ? availableLocales.filter((loc) => loc === defaultLocale) : [defaultLocale];
 ---
 
 <details class="relative">
@@ -43,16 +44,6 @@ const switchLocales = availableLocales ?? locales;
           {LOCALE_LABELS[loc]}
         </a>
       ))
-    }
-    {
-      landingLinkEnabled && (
-        <a
-          href={zhLandingLink.href}
-          class="block border-t border-border px-3 py-2 text-sm text-muted-foreground transition hover:bg-muted hover:text-nav"
-        >
-          {zhLandingLink.label}
-        </a>
-      )
     }
   </div>
 </details>

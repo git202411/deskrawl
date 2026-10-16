@@ -1,18 +1,20 @@
 {
   "$schema": "../../docs/home.schema.json",
   "site": {
-    "name": "Anvil Quest Wiki",
-    "shortName": "AQ Wiki",
-    "description": "Complete Anvil Quest wiki with boss guides, tier lists, codes, item locations, and beginner tips. Every guide carries a last-verified date.",
-    "tagline": "Your forge for everything Anvil Quest",
-    "legalNotice": "Anvil Quest Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer."
+    "name": "Deskrawl Wiki & Guide",
+    "shortName": "Deskrawl Guide",
+    "description": "Deskrawl wiki and guide for the Steam idle ARPG: boss unlocks, class builds, minions and reins, legendary items, market prices, life skills, and patch notes.",
+    "tagline": "The practical Deskrawl database for every run",
+    "legalNotice": "Deskrawl Guide is an independent fan-made resource and is not affiliated with First Day Games."
   },
   "nav": {
     "home": "Home",
     "bosses": "Bosses",
     "guides": "Guides",
+    "builds": "Builds",
+    "minions": "Minions",
     "items": "Items",
-    "codes": "Codes",
+    "market": "Market",
     "toggleTheme": "Toggle theme",
     "menu": "Menu",
     "close": "Close",
@@ -130,31 +132,39 @@
   "overview": {
     "bosses": {
       "overviewTitle": "All Bosses",
-      "overviewDescription": "Complete strategy guides for every boss in Anvil Quest, including attack patterns, weaknesses, and recommended loadouts."
+      "overviewDescription": "Deskrawl boss unlocks, regions, Demon Skull requirements, and achievement paths for all 20 encounters."
     },
     "guides": {
       "overviewTitle": "All Guides",
-      "overviewDescription": "In-depth tutorials covering progression, crafting, combat mechanics, and advanced strategies for Anvil Quest."
+      "overviewDescription": "Deskrawl progression routes, online mode tips, endgame systems, life skills, and patch-aware walkthroughs."
+    },
+    "builds": {
+      "overviewTitle": "Deskrawl Class Builds",
+      "overviewDescription": "Practical Hunter, Monk, Sorcerer, and Warrior builds for leveling and endgame Deskrawl content."
+    },
+    "minions": {
+      "overviewTitle": "Deskrawl Minions & Reins",
+      "overviewDescription": "Learn how minion capture works, which reins are worth keeping, and how Steam Market pricing changes."
     },
     "items": {
       "overviewTitle": "All Items",
-      "overviewDescription": "Comprehensive item database with locations, stats, rarity tiers, and crafting recipes."
+      "overviewDescription": "Deskrawl legendary and ancient items, runes, upgrade materials, and tooltip references."
     },
-    "codes": {
-      "overviewTitle": "All Codes",
-      "overviewDescription": "Active Anvil Quest codes for free coins, gems, and exclusive items. Verified daily."
+    "market": {
+      "overviewTitle": "Deskrawl Steam Market",
+      "overviewDescription": "How to trade Deskrawl items and reins on Steam, with price context and market safety tips."
     }
   },
   "home": {
     "meta": {
-      "title": "Anvil Quest Wiki - Complete Boss Guides, Codes & Tier Lists",
-      "description": "The most complete Anvil Quest wiki. Boss strategies, active codes, item locations, tier lists, and beginner guides. Every page shows when it was last verified."
+      "title": "Deskrawl Wiki & Guide - Bosses, Builds, Minions and Market",
+      "description": "Deskrawl guide and wiki covering all 20 bosses, class builds, minions and reins, legendary items, Steam Market prices, life skills, and updates."
     },
     "hero": {
       "badge": "Fan-Made Community Wiki",
-      "title": "Anvil Quest Wiki",
-      "description": "Your complete guide to Anvil Quest. Boss strategies, active codes, item locations, tier lists, and everything you need to master the forge.",
-      "ctaPrimary": "Play Anvil Quest",
+      "title": "Deskrawl Wiki & Guide",
+      "description": "Your independent Deskrawl reference: boss unlocks, four class builds, minions, reins, legendary items, Steam Market data, and beginner routes.",
+      "ctaPrimary": "Play Deskrawl on Steam",
       "ctaSecondary": "Browse Guides",
       "videoId": ""
     },
@@ -163,57 +173,57 @@
     },
     "start": {
       "badge": "Start Here",
-      "title": "Your Anvil Quest Journey",
+      "title": "Start your Deskrawl run",
       "cards": [
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "New to Anvil Quest? Start here with the essential mechanics, controls, and your first hour walkthrough.",
+          "description": "New to Deskrawl? Learn the first progression steps, offline characters, and what to upgrade first.",
           "icon": "lucide:book-open",
           "href": "/guides/beginner-guide"
         },
         {
           "number": "2",
-          "title": "Active Codes",
-          "description": "Redeem the latest codes for free coins, gems, and exclusive cosmetic items.",
-          "icon": "lucide:gift",
-          "href": "/codes"
+          "title": "Class Builds",
+          "description": "Compare Hunter, Monk, Sorcerer, and Warrior builds for your playstyle.",
+          "icon": "lucide:shield",
+          "href": "/builds"
         },
         {
           "number": "3",
           "title": "Boss Strategies",
-          "description": "Complete guides for every boss with attack patterns, weaknesses, and recommended loadouts.",
+          "description": "Track all 20 Deskrawl bosses, their unlock rates, and achievement requirements.",
           "icon": "lucide:swords",
           "href": "/bosses"
         },
         {
           "number": "4",
-          "title": "Weapon Tier List",
-          "description": "Ranking every weapon from S to C based on DPS, utility, and synergy.",
-          "icon": "lucide:list-ordered",
-          "href": "/guides/weapon-tier-list"
+          "title": "Minions & Reins",
+          "description": "Understand capture, reins, legendary drops, and the minions players actually use.",
+          "icon": "lucide:paw-print",
+          "href": "/minions"
         }
       ]
     },
     "popular": {
       "badge": "Trending Now",
-      "title": "Most Read This Week",
+      "title": "Most read Deskrawl pages",
       "quickLinks": [
         {
-          "label": "Emberfang Boss Guide",
-          "href": "/bosses/emberfang"
+          "label": "All 20 Bosses",
+          "href": "/bosses"
         },
         {
-          "label": "Best Weapons Tier List",
-          "href": "/guides/weapon-tier-list"
+          "label": "Best Class Builds",
+          "href": "/builds"
         },
         {
           "label": "Beginner Guide",
           "href": "/guides/beginner-guide"
         },
         {
-          "label": "All Active Codes",
-          "href": "/codes"
+          "label": "Steam Market Guide",
+          "href": "/market"
         }
       ]
     },
@@ -345,29 +355,25 @@
         {
           "order": 6,
           "name": "Video Guides",
-          "description": "Watch the best Anvil Quest walkthroughs and boss fights.",
+          "description": "Watch Deskrawl gameplay, class builds, boss fights, and progression guides.",
           "href": "/guides",
           "displayType": "video-grid",
           "highlights": [
             {
-              "title": "Beginner Walkthrough",
-              "youtubeId": "dQw4w9WgXcQ",
-              "duration": "12:34"
+              "title": "Deskrawl Beginner Guide",
+              "youtubeId": "e7evrcbo0D8"
             },
             {
-              "title": "All Bosses Ranked",
-              "youtubeId": "aaaaaaaaaaa",
-              "duration": "18:42"
+              "title": "Deskrawl Bosses and Unlocks",
+              "youtubeId": "7-8c7oZP6xk"
             },
             {
-              "title": "Speedrun Guide",
-              "youtubeId": "bbbbbbbbbbb",
-              "duration": "25:10"
+              "title": "Deskrawl Class Build Guide",
+              "youtubeId": "PBMfL5nHkgE"
             },
             {
-              "title": "Hidden Secrets",
-              "youtubeId": "ccccccccccc",
-              "duration": "9:15"
+              "title": "Deskrawl Minions and Reins",
+              "youtubeId": "Atzcc0JS1Jc"
             }
           ]
         }
@@ -375,15 +381,15 @@
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Quick answers to the most common questions about Anvil Quest.",
+      "description": "Quick answers to the most common questions about Deskrawl Quest.",
       "items": [
         {
-          "question": "What is Anvil Quest?",
-          "answer": "Anvil Quest is a fantasy RPG on Roblox where you play as a blacksmith apprentice forging weapons and battling bosses across the Shattered Isles. It launched in January 2026 and has over 12 million visits."
+          "question": "What is Deskrawl?",
+          "answer": "Deskrawl: Idle ARPG is a loot-driven idle action RPG by First Day Games that runs in a strip at the bottom of your desktop. It released on Steam on September 28, 2026."
         },
         {
-          "question": "Which class should beginners pick in Anvil Quest?",
-          "answer": "Warrior is the most beginner-friendly class thanks to high HP and simple mechanics. Once you understand the game, Rogue offers the highest damage output for experienced players."
+          "question": "How many classes are there?",
+          "answer": "Four: Warrior, Sorcerer, Hunter and Monk. Each has its own talent tree, four basic attacks, four strong attacks and six specials."
         },
         {
           "question": "How do I redeem codes in Anvil Quest?",
@@ -400,14 +406,14 @@
       ]
     },
     "closingCta": {
-      "title": "Ready to Master the Forge?",
-      "description": "Bookmark this wiki and check back daily for new codes, boss guides, and tier list updates.",
-      "primary": "Play Anvil Quest",
-      "secondary": "Join Our Discord"
+      "title": "Plan your next Deskrawl run",
+      "description": "Bookmark this wiki for boss unlocks, build updates, minion notes, market context, and new patch coverage.",
+      "primary": "Play Deskrawl on Steam",
+      "secondary": "About this guide"
     }
   },
   "footer": {
-    "playGame": "Play Anvil Quest",
+    "playGame": "Play Deskrawl on Steam",
     "officialDiscord": "Official Discord",
     "officialYoutube": "Official YouTube",
     "officialTwitter": "Official Twitter",
@@ -418,7 +424,7 @@
     "termsOfService": "Terms of Service",
     "copyright": "Copyright",
     "contact": "Contact",
-    "copyrightText": "© 2026 Anvil Quest Wiki. Fan-made, not affiliated with Forge Studios.",
+    "copyrightText": "© 2026 Deskrawl Guide. Fan-made, not affiliated with First Day Games.",
     "community": "Community",
     "legal": "Legal"
   }

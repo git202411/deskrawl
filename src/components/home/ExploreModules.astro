@@ -51,7 +51,7 @@ const viewAll = sharedStrings.viewAll ?? 'View all';
 <div class="grid gap-6 md:grid-cols-2">
   {
     modules.map((m) => (
-      <a href={localizePath(m.href, locale)} class="card group block overflow-hidden p-5">
+      <div class:list={[m.displayType === 'video-grid' ? 'card block overflow-hidden p-5' : 'card group block overflow-hidden p-5']}>
         <h3 class="text-lg font-bold leading-snug">{m.name}</h3>
         <p class="mt-1 text-sm text-muted-foreground">{m.description}</p>
 
@@ -64,14 +64,14 @@ const viewAll = sharedStrings.viewAll ?? 'View all';
           {m.displayType === 'video-grid' && <VideoGrid highlights={m.highlights} />}
         </div>
 
-        <p class="mt-4 inline-flex items-center gap-1 text-xs font-medium text-foreground hover:text-nav">
+        <a href={localizePath(m.href, locale)} class="mt-4 inline-flex items-center gap-1 text-xs font-medium text-foreground hover:text-nav">
           <span class="border-b border-transparent transition group-hover:border-nav">{viewAll}</span>
           <Icon
             name="lucide:arrow-right"
             class="h-3 w-3 transition group-hover:translate-x-0.5"
           />
-        </p>
-      </a>
+        </a>
+      </div>
     ))
   }
 </div>

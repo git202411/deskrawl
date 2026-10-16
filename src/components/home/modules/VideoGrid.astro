@@ -56,8 +56,9 @@ const { highlights } = Astro.props;
 <div class="grid gap-2 sm:grid-cols-2">
   {
     highlights.map((h) => (
-      <div class="overflow-hidden rounded-md border bg-card">
-        <div class="relative aspect-video">
+      <details class="group overflow-hidden rounded-md border bg-card transition open:border-nav/60">
+        <summary class="list-none cursor-pointer [&::-webkit-details-marker]:hidden" aria-label={`Play ${h.title} here`}>
+          <div class="relative aspect-video">
           <img
             src={`https://i.ytimg.com/vi/${h.youtubeId}/hqdefault.jpg`}
             alt={h.title}
@@ -72,9 +73,23 @@ const { highlights } = Astro.props;
               {h.duration}
             </span>
           )}
+            <span class="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 transition group-hover:bg-black/20">
+              <span class="flex h-11 w-11 items-center justify-center rounded-full bg-red-600 text-white opacity-0 shadow-lg transition group-hover:opacity-100" aria-hidden="true">▶</span>
+            </span>
+          </div>
+          <p class="truncate p-2 text-xs font-medium text-foreground group-hover:text-nav">{h.title}</p>
+        </summary>
+        <div class="aspect-video border-t border-border bg-black">
+          <iframe
+            class="h-full w-full"
+            src={`https://www.youtube.com/embed/${h.youtubeId}?autoplay=1&rel=0`}
+            title={h.title}
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
-        <p class="truncate p-2 text-xs font-medium text-foreground">{h.title}</p>
-      </div>
+      </details>
     ))
   }
 </div>

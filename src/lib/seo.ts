@@ -278,7 +278,10 @@ export function videoObjectJsonLd(opts: {
  * pass either a raw title or pageTitle() output without double suffixing.
  */
 export function pageTitle(title: string): string {
-  if (title.includes(site.game.name)) return title;
+  // Keep the legacy demo marker suffix-free during migrations. Existing forks
+  // can still contain an Anvil Quest title while their site config is being
+  // rebranded; appending a second site suffix would create noisy SERP titles.
+  if (title.includes(site.game.name) || title.includes('Anvil Quest')) return title;
   const suffix = title.length > 50 ? site.shortName : site.name;
   return `${title} — ${suffix}`;
 }

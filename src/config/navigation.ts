@@ -31,8 +31,12 @@ export interface NavigationItem {
 export const NAVIGATION_CONFIG: NavigationItem[] = [
   { key: 'bosses', path: '/bosses', icon: 'lucide:swords', isContentType: true, order: 1 },
   { key: 'guides', path: '/guides', icon: 'lucide:book-open', isContentType: true, order: 2 },
-  { key: 'items', path: '/items', icon: 'lucide:package', isContentType: true, order: 3 },
-  { key: 'codes', path: '/codes', icon: 'lucide:gift', isContentType: true, order: 4 },
+  { key: 'builds', path: '/builds', icon: 'lucide:shield', isContentType: true, order: 3 },
+  { key: 'minions', path: '/minions', icon: 'lucide:paw-print', isContentType: true, order: 4 },
+  { key: 'items', path: '/items', icon: 'lucide:package', isContentType: true, order: 5 },
+  { key: 'market', path: '/market', icon: 'lucide:shopping-cart', isContentType: true, order: 6 },
+  // Kept for template compatibility; Deskrawl does not currently publish redemption codes.
+  { key: 'codes', path: '/codes', icon: 'lucide:gift', isContentType: true, order: 7 },
 ];
 
 /** Derived list of content type slugs (e.g. ['bosses', 'guides', 'items', 'codes']). */

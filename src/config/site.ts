@@ -62,35 +62,27 @@ export interface SiteConfig {
 }
 
 export const site: SiteConfig = {
-  name: 'Anvil Quest Wiki',
-  shortName: 'AQ Wiki',
+  name: 'Deskrawl Wiki & Guide',
+  shortName: 'Deskrawl wiki',
   description:
-    'Complete Anvil Quest wiki with boss guides, tier lists, codes, item locations, and beginner tips. Every guide carries a last-verified date.',
-  domain: 'anvil.wiki',
-  tagline: 'Your forge for everything Anvil Quest',
+    'Deskrawl wiki and guide for the Steam idle ARPG: boss unlocks, class builds, minions and reins, legendary items, market prices, life skills, and patch notes.',
+  domain: 'deskrawlguide.wiki',
+  tagline: 'The practical Deskrawl database for every run',
   legalNotice:
-    'Anvil Quest Wiki is a fan-made community site. Not affiliated with or endorsed by the game developer.',
+    'Deskrawl Guide is an independent fan-made resource and is not affiliated with First Day Games.',
   // 👉 APPLY TEMPLATE: set a real address if you run no social channels —
   // the contact page renders it as a mailto link.
   contactEmail: '',
   social: {
-    official: 'https://example.com/anvil-quest',
-    discord: 'https://discord.gg/example',
-    youtube: 'https://youtube.com/@example',
-    twitter: 'https://twitter.com/example',
-    reddit: 'https://reddit.com/r/anvilquest',
+    official: 'https://store.steampowered.com/app/4623570/Deskrawl_Idle_ARPG/',
   },
   // 👉 APPLY TEMPLATE: point these at the game's real canonical pages.
-  sameAs: [
-    'https://example.com/anvil-quest',
-    'https://en.wikipedia.org/wiki/Anvil_Quest',
-  ],
   game: {
-    name: 'Anvil Quest',
-    platform: 'Roblox',
-    developer: 'Forge Studios',
-    genre: 'Fantasy RPG',
-    releaseDate: '2026-01-15',
+    name: 'Deskrawl',
+    platform: 'PC (Steam, Windows)',
+    developer: 'First Day Games',
+    genre: 'Desktop Idle ARPG',
+    releaseDate: '2026-09-28',
   },
   // hero.webp is 1200×630 (the recommended OG share aspect ratio).
   ogImageWidth: 1200,
